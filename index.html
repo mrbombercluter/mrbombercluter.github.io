@@ -9,30 +9,44 @@
 	<script defer src="scripts.js"></script>
 </head>
 
-<div id="tyrone-container">
-	<div id="tyrone-button">
-		<span id="tyrone-text">Get Tyroneware.cc</span>
-	</div>
-	<div id="fatality-buttons">
-		<a id="fatality-premier-cfg-button"
-			href="https://fatality.win/resources/alpha-full-rage-config-for-premier-%E2%9A%99%EF%B8%8Fundetected-no-vac%E2%9D%A4%EF%B8%8F-alpha.1543/updates#resource-update-9853"
-			target="_blank">
-			<span id="fatality-premier-cfg-text">Fatality PREMIER CFG</span>
-		</a>
-		<a id="fatality-comm-cfg-button"
-			href="https://fatality.win/resources/community-hvh.1711/updates#resource-update-9927" target="_blank">
-			<span id="fatality-comm-cfg-text">Fatality COMM CFG</span>
-		</a>
-		<a id="fatality-legit-button" href="https://fatality.win/resources/legit.362/" target="_blank">
-			<span id="fatality-legit-text">Fata legit</span>
-		</a>
-	</div>
-	<div id="new-buttons">
-		<a id="discord-button" href="https://discord.gg/HnbtuetyJ8" target="_blank">
-			<span id="discord-text">Discord</span>
-		</a>
-		<a id="cheap-nfa-button" href="https://discord.gg/aKQF374ZSd" target="_blank">
-			<span id="cheap-nfa-text">CHEAP NFA</span>
-		</a>
-	</div>
-</div>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#buttons">Where would you like to go?</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="buttons">
+			<h2>Choose Your Option</h2>
+			<div class="button-container">
+				<a href="https://fatality.win/resources/legit.362/" target="_blank">
+					<button id="fatality-legit" onclick="buttonClick('Fatality Legit')">Fatality Legit</button>
+				</a>
+				<a href="https://fatality.win/resources/community-hvh.1711/" target="_blank">
+					<button id="fatality-rage" onclick="buttonClick('Fatality Rage')">Fatality Rage</button>
+				</a>
+				<a href="https://fatality.win/resources/alpha-full-rage-config-for-premier-%E2%9A%99%EF%B8%8Fundetected-no-vac%E2%9D%A4%EF%B8%8F-alpha.1543/"
+					target="_blank">
+					<button id="fatality-semi-rage" onclick="buttonClick('Fatality Semi-rage (Premier)')">Fatality Semi-rage (Premier)</button>
+				</a>
+				<div class="large-button-container">
+					<a href="https://discord.gg/HnbtuetyJ8" target="_blank">
+						<button id="discord" onclick="buttonClick('Discord')">Discord</button>
+					</a>
+					<a href="https://discord.gg/aKQF374ZSd" target="_blank">
+						<button id="nfas" onclick="buttonClick('NFA\'s')">NFA's</button>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Tyroneware. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>
