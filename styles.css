@@ -1,86 +1,88 @@
 body {
-  background-color: #6c5ce7;
-  color: #F0ff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    color: white;
 }
 
-#tyrone-container {
-  position: relative;
-  width: 90%;
-  height: 90%;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
-  transition: background-image 0.3s ease;
+header {
+    background-color: #4b0082;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-#tyrone-button, #fatality-buttons a, #discord-button, #cheap-nfa-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 60px;
-  background-color: #4c3095;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 10px 0;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-#tyrone-button:hover, #fatality-buttons a:hover, #discord-button:hover, #cheap-nfa-button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
 
-#tyrone-button:active, #fatality-buttons a:active, #discord-button:active, #cheap-nfa-button:active {
-  transform: translateY(0);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-#tyrone-button::before, #fatality-buttons a::before, #discord-button::before, #cheap-nfa-button::before {
-  margin-right: 10px;
-  font-size: 1.5em;
+#buttons {
+    text-align: center;
+    margin: 50px 0;
 }
 
-#fatality-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+.button-container a {
+    text-decoration: none;
 }
 
-#fatality-buttons a {
-  width: 200px;
-  font-size: 1em;
-  margin: 5px;
+.button-container button {
+    background-color: #8a2be2;
+    border: 2px solid #6a0dad;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-#new-buttons {
-  margin-top: 10px;
+.button-container button:hover {
+    background-color: #6a0dad;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-#discord-button {
-  width: 500px;
-  margin-top: 20px;
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
-#cheap-nfa-button {
-  width: 500px;
-  margin-top: 20px;
+.button-container button.button-hover {
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h1, h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+footer {
+    background-color: #4b0082;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
