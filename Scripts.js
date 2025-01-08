@@ -1,19 +1,3 @@
-
-var devtoolsOpen = false;
-setInterval(function() {
-    const width = window.outerWidth - window.innerWidth > 100;
-    const height = window.outerHeight - window.innerHeight > 100;
-    if (width || height) {
-        if (!devtoolsOpen) {
-            devtoolsOpen = true;
-            alert('DevTools detected!');
-        }
-    } else {
-        devtoolsOpen = false;
-    }
-}, 1000);
-
-
 function buttonClick(buttonName) {
     alert(`You are about to be redirected to ${buttonName}. Please wait...`);
 }
