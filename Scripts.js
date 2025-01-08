@@ -1,3 +1,42 @@
+document.addEventListener("keydown", function(event) {
+    if (event.key === "F12") {
+        event.preventDefault();
+    }
+});
+
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+var devtoolsOpen = false;
+setInterval(function() {
+    const width = window.outerWidth - window.innerWidth > 100;
+    const height = window.outerHeight - window.innerHeight > 100;
+    if (width || height) {
+        if (!devtoolsOpen) {
+            devtoolsOpen = true;
+            alert('DevTools detected!');
+        }
+    } else {
+        devtoolsOpen = false;
+    }
+}, 1000);
+
+console.log = function() {};
+console.warn = function() {};
+console.error = function() {};
+
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+    }
+});
+
+
 function buttonClick(buttonName) {
     alert(`You are about to be redirected to ${buttonName}. Please wait...`);
 }
