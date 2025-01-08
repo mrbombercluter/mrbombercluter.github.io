@@ -1,16 +1,3 @@
-document.addEventListener("keydown", function(event) {
-    if (event.key === "F12") {
-        event.preventDefault();
-    }
-});
-
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-});
-
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-});
 
 var devtoolsOpen = false;
 setInterval(function() {
@@ -25,16 +12,6 @@ setInterval(function() {
         devtoolsOpen = false;
     }
 }, 1000);
-
-console.log = function() {};
-console.warn = function() {};
-console.error = function() {};
-
-document.addEventListener('keydown', function(e) {
-    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
-        e.preventDefault();
-    }
-});
 
 
 function buttonClick(buttonName) {
